@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+
+
+
+@layer base {
+  html{
+    font-family: "Newsreader", serif;
+    background-color:linear-gradient(150deg, #63d4f3, #00bafe, #009cff, #1476ff);
+    background-image: radial-gradient(circle at 50% 70%, #37f3dd, #00e6ea, #00d8f8, #00c9ff, #00b8ff, #00a5ff, #008fff, #1476ff);;
+    margin: 0;
+  }
+}
+
+.hero {
+  top: 0;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
+  width: 100%;
+  height: 360px ;
+}
+
+.videoHero {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  z-index: 1;
+  backdrop-filter: blur(3px);
+}
+
+
+
